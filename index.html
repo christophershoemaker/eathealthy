@@ -1,9 +1,223 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="https://fonts.googleapis.com/css?family=K2D:400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+         crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/nav.css">
+      <link rel="stylesheet" href="css/sections.css">
+      <link rel="stylesheet" href="css/slider.css">
+      
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.js"
+         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+         crossorigin="anonymous"></script>
+      <script src="js/slider.js"></script>
+      <script src="js/googlemaps.js"></script>
+      <title>EatHealthy</title>
+   </head>
+   <body>
+      <div class="main">
+      <div class="wrapper">
+         <nav class="landing_top">
+            <div class="nav" id="nav">
+               <div class="branding">
+                  <a href="./index.html">
+                     <h1><span>Eat</span>Healthy</h1>
+                  </a>
+               </div>
+               <div class="menu">
+                  <nav>
+                     <ul>
+                        <li><a href="#section1">O nas</a></li>
+                        <li><a href="#section3">Produkty</a></li>
+                        <li><a href="https://shop.eathealthy.pl/">Sklep</a></li>
+                        <!-- <li><a href="#section4">Wkrótce</a></li> -->
+                        <li><a href="#section5">Dołącz do nas</a></li>
+                        <li><a href="#section2">Kontakt</a></li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </nav>
+         <div id="section1" class="section">
+            <div id="slider" class="slides">
+               <div class="slide">
+                  <figure>
+                     <img class="hidden" src="images/bread/gryczany.jpg" alt="Chleb gryczany">
+                  </figure>
+                  <div class="slide-description">
+                     <h3 class="slide-header">Kim jesteśmy ?</h3>
+                     <p>Jesteśmy młodą grupą składającą się z kilku osób, zafascynowaną zdrowym odżywianiem. 
+                        Sami przeszliśmy bardzo długą drogę testując na sobie różne warianty diety i wiemy jakim problemem jest alergia i nietolerancja. 
+                        Postanowiliśmy więc stworzyć takie miejsce gdzie każdy znajdzie coś dla siebie.
+                        Oczywiście nasz pomysł dopiero startuje. Naszą przygodę zaczynamy od okrojonej oferty by zbadać rynek czy takie "nowe" miejsce jest potrzebne.
+                        Zaczynamy od przedstawienia bezglutenowego, bezmlecznego, bezjajecznego pieczywa, które nie jest puchem, którym nie można się najeść jak to bywa w wielu przypadkach.</p>
+                  </div>
+               </div>
+               <div class="slide">
+                  <figure>
+                     <img class="hidden" src="images/bread/ziarniak.jpg" alt="Chleb Ziarniak">
+                  </figure>
+                  <div class="slide-description">
+                     <h3 class="slide-header">Czego pragniemy ?</h3>
+                     <p>Wiele osób będących na dieci myśli o wyrzeczeniach. Jednak my spróbujemy przekonać, że będąc na diecie można odkrywać to czego wcześniej nie dostrzegaliśmy - poznawać nowe smaki i kompozycje kulinarne. Doskonale zdajemy sobie sprawę jakim problemem jest alergia i nietolerancja i wiemy jak z nimi walczyć eliminując składniki zapalne. Dlatego posiadamy w ofercie produkty będą bezglutenowe, bezmleczne, bezjajeczne. Pragniemy stworzyć miejsce unikalne pod względem oferty i jednocześnie aby każdy znalazł coś dla siebie.</p>
+                  </div>
+               </div>
+               <div class="slide">
+                  <figure>
+                     <img class="hidden" src="images/bread/ziarniak2.jpg" alt="Chleb Ziarniak">
+                  </figure>
+                  <div class="slide-description">
+                     <h3 class="slide-header">Dalszy rozwój i do czego dążymy ? Czego potrzebujemy ? </h3>
+                     <p>Potrzebujemy czasu aby ludzie nas poznali. Wierzymy, że dobra oferta obroni się sama i nie trzeba jej reklamować. Poprzez badanie rynku oferując okrojoną ofertę odkryjemy czy nasz pomysł ma rację bytu. Jeśli pomysł podchwyci i znajdą się fascynaci tacy jak my, chcący dołączyć do nas to bądźcie pewni, że w niedługim czasie zaskoczymy trójmiejski rynek i to bardzo ... i nie tylko ofertą ... i nie tylko pomysłem na realizację ... Bo pomysłów jest aż za nadto :) Pozdrawiamy</p>
+                  </div>
+               </div>
+               <nav role="pagination" class="dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+               </nav>
+               <nav role="pagination" class="arrows">
+                  <button class="arrow-prev">❮</button>
+               </nav>
+               <nav role="pagination" class="arrows">
+                  <button class="arrow-next">❯</button>
+               </nav>
+            </div>
+         </div>
+         <div id="section2" class="section">
+                  <div class="contactMap">
+                    <div id="map"></div>
+                    <div id="places">Kontakt:
+                      <ul>
+                        <li>Gdańsk</li>
+                        <li>Gdynia</li>
+                        <li>Rumia</li>
+                        </ul>
+                        <p>Telefon:</p>
+                        <div id="number">506 <span>XXX XXX</span><span style="display:none;">765 420</span></div>
+                        <p>Email:</p>
+                        <a href="#" class="cryptedmail"
+                           data-name="eathealthy.pl"
+                           data-domain="gmail"
+                           data-tld="com"
+                           onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
+                        </a>
+                    </div>
+                  </div>
+         </div>
+         <div id="section3" class="section">
+            <div id="title">
+                 Produkty
+             </div>
+               <div class="product">
+                  <a href="https://shop.eathealthy.pl/index.php/produkt/chleb-gryczany-z-certyfikowanych-bezglutenowych-skladnikow/">
+                  <img src="./images/thumbnails/gryczany_thb_1.jpg" alt="slide">
+                  <h2>  
+                     <p>
+                        1. Chleb gryczany - 12 pln/kg
+                        <p class="details">Może zawierać śladowe ilości glutenu</p>
+                     </p>
+                     <p>
+                        2. Z certyfikowanych składników - 17 pln/kg
+                        <p class="details">Całkowiecie bezglutenowy</p>
+                     </p>
+                  </h2>
+                  </a>
+               </div>
+               <div class="product">
+                  <a href="https://shop.eathealthy.pl/index.php/produkt/chleb-ziarniak/"><img src="./images/thumbnails/ziarniak_thb_1.jpg" alt="slide">
+                  <h2>
+                     Chleb ziarniak - 16 pln/kg
+                     <p class="details">Może zawierać śladowe ilości glutenu</p>
+                  </h2>
+                  </a>
+               </div>
+               <div class="product">
+                  <a href="https://shop.eathealthy.pl/index.php/produkt/bulka-z-ziaren/">
+                  <img src="./images/thumbnails/bulka_thb.jpg" alt="slide">
+                  <h2>
+                     Bułka z ziaren - 3,20 pln/150g/szt.
+                     <p class="details">Może zawierać śladowe ilości glutenu</p>
+                  </h2>
+                  </a>
+               </div>
 
-<h1>Eat Healthy</h1>
-<p>Eat Healthy</p>
-
-</body>
-</html> 
+         </div>
+         <!-- <div id="section4" class="section">
+          <div class="text-wr">
+          </div>
+          <div id="title">
+            Wkrótce
+        </div>
+        <div class="product">
+         <img src="./images/thumbnails/ciasto1.jpg" alt="slide">
+         <h2>Avokadnik - 10 pln/kg</h2>
+      </div>
+      <div class="product">
+         <img src="./images/thumbnails/ciasto2.jpg" alt="slide">
+         <h2>Tofurnik - 15 pln/kg</h2>
+      </div>
+      <div class="product">
+         <img src="./images/thumbnails/kotleciki.jpg" alt="slide">
+         <h2>Kotleciki - 1,50 pln/szt.</h2>
+      </div>
+       </div> -->
+   <div id="section5" class="section">
+    <div class="text-wr">
+    </div>
+       <h1 id="title">Chcesz dołączyć ? </h1>
+       <p class="item" id="content">Szukamy ludzi z pasją, którzy lubią kulinaria i lubią poznawać i tworzyć nowe smaki i konstruować istniejące ale z innych produktów. Jeśli chcesz dołączyć do nas napisz na <a href="#" class="cryptedmail"
+         data-name="eathealthy.pl"
+         data-domain="gmail"
+         data-tld="com"
+         onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
+      </a> parę słów o sobie. Być może w niedługim czasie się do Ciebie odezwiemy.</p>
+    
+ </div>
+         <section>
+            <div id="slogan">
+               <h1 class="slogan_coffee">Eat Healthy</h1>
+               <div class="line_break"></div>
+               <h3 class="slogan_text">Zapraszamy do współpracy </h3>
+            </div>
+         </section>
+         <footer>
+            <div class="box">
+               <div class="social_media">
+                  <a href="https://twitter.com/EatHeal24537205" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.facebook.com/EatHealthypl" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/eathealthy.pl/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="#" target="_blank"><i class="fas fa-envelope"></i></a> -->
+               </div>   
+            </div>
+            <div class="credits">
+               <h3>&copy;EatHealthy</h3>
+            </div>
+         </footer>
+      </div>
+      </div>
+      <script>
+         (function () {
+           new Slider("#slider .slide").options({
+               prev: "#slider nav button.arrow-prev",
+               next: "#slider nav button.arrow-next",
+               nav: "#slider nav.dots span"
+           }).init();
+         })();
+      </script>
+      <script>
+         $('#number').click(function() {
+            $(this).find('span').toggle();
+         });
+      </script>
+      <script src="js/floatingmenu.js"></script>
+   </body>
+</html>

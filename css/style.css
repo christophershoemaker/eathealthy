@@ -1,0 +1,278 @@
+/* variables */
+:root {
+  --primary: #ffffff;
+  --secondary: rgb(0, 0, 0);
+  --green: #52dd52;
+  --secondary_light: rgba(0, 0, 0, 0.8);
+  --nav_hover: rgba(219, 193, 172, 0.5);
+  --light_hover: rgba(236, 224, 209, 0.5);
+  --light: rgba(236, 224, 209, 1);
+  --light_ultra_light: rgba(236, 224, 209, 0.5);
+  --dark: rgb(0, 174, 255);
+  --dark_light: rgba(56, 34, 15, 0.5);
+  --mid: rgb(150, 114, 89);
+  --heading: "K2D", sans-serif;
+  --paragraph: "Roboto", sans-serif;
+  --footer_opacity: 0.5;
+}
+
+body .main {
+  box-sizing: border-box;
+  font-family: var(--heading);
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+  color: var(--primary);
+  margin: 0;
+  /* background: url(./images/backgroundplant.jpg); */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+}
+
+.landing_top { 
+  height: 0vh;
+}
+
+.landing_bottom {
+  height: 80vh;
+}
+
+/* Header */
+
+.branding {
+  display: table-cell;
+  font-size: 1rem;
+  margin-left: 1rem;
+  /* float: left; */
+  height: 10vh;
+}
+
+.branding,
+.menu {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.branding h1 {
+  margin-left: 10vh;
+}
+
+.branding span {
+  color: var(--green);
+}
+.branding a{
+  text-align: left;
+}
+
+.menu ul {
+  text-align: right;
+}
+
+.menu ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu:hover {
+  color: var(--light_hover);
+}
+
+/* Showcase */
+
+.landing_bottom {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.large_text {
+  display: inline-block;
+  padding: 0rem 1.5rem;
+  font-size: 3rem;
+  border-width: 0.1rem 0 0.1rem 0;
+  border-style: solid;
+  border-color: var(--primary);
+  border-radius: 0.3rem;
+}
+
+.large_text h1 {
+  margin: 0;
+}
+
+.small_text h3 {
+  display: inline-block;
+  font-family: var(--paragraph);
+  font-weight: 400;
+  background: var(--nav_hover);
+}
+
+.coffee {
+  color: var(--secondary);
+  font-weight: 800;
+}
+
+.expresso {
+  position: relative;
+  display: inline-block;
+  margin: 15rem;
+  padding: 0;
+  height: 5vh;
+}
+
+.expresso h3 {
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  color: var(--dark);
+  background: var(--light);
+  border: 0.1rem var(--light) solid;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.expresso i {
+  color: var(--primary);
+  transition: 0.5s;
+  transition-timing-function: ease;
+}
+
+.expresso i:hover {
+  color: var(--light_hover);
+  transition-timing-function: ease;
+}
+
+/* Slogan */
+
+#slogan {
+  display: inline-block;
+  background: var(--secondary_light);
+  text-align: center;
+  width: 100%;
+  height: 10rem;
+}
+
+.slogan_coffee {
+  color: var(--light);
+  font-size: 3rem;
+  margin: 0;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.slogan_text {
+  margin: 0;
+  font-family: var(--paragraph);
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.buttons {
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  border: 0.1rem var(--secondary) solid;
+  background: rgba(0, 0, 0, 0);
+  padding: 0.5rem 10rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: var(--primary);
+  border-radius: 0.5rem;
+}
+
+.button:hover {
+  background-color: var(--light_ultra_light);
+  color: var(--secondary);
+}
+
+/*Footer*/
+
+footer {
+  background: var(--secondary);
+  padding: 2rem;
+}
+
+.box {
+  display: grid;
+  justify-items: center;
+}
+
+.social_media {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 2rem);
+  opacity: var(--footer_opacity);
+}
+
+footer a:hover {
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.credits {
+  display: block;
+  text-align: center;
+}
+
+.credits h3 {
+  font-family: var(--paragraph);
+  font-weight: 200;
+  opacity: var(--footer_opacity);
+}
+
+.credits a {
+  text-decoration: underline;
+}
+
+/* Contact Map */
+.contactMap {
+  width: 100%;
+  height: 100%;
+}
+
+#places {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: absolute;
+  padding: 50px;
+  top: 100px;
+  left: 100px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#title {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: absolute;
+  padding: 20px;
+  top: 10vh;
+  left: 100px;
+  right: 100px;
+  font-size: 60px;
+}
+
+#content {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  position: absolute;
+  padding: 20px;
+  top: 30vh;
+  left: 100px;
+  right: 100px;
+  font-size: 20px;
+}

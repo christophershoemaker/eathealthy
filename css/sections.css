@@ -1,0 +1,125 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.cryptedmail:after {
+	content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+  }
+
+.section {
+	min-height: 100vh;
+	position: relative;
+	text-align: center;
+	font-family: sans-serif, arial;
+	margin: 0;
+}
+
+.text-wr {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.offer {
+	float: left;
+	margin: 10vh;
+}
+
+#section1 {
+	background: #5c53aa;
+	color: #8d86c3;
+}
+
+#section2 {
+	background: #4bbfc3;
+	color: #81d2d5;
+}
+
+#section3 {
+	background: url(../images/slides/wood.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family: sans-serif, arial;
+	font-size: 40;
+	color: #686e7c;
+	box-sizing: border-box;
+	display:flex;
+	flex-direction:row;
+}
+
+#section4 {
+	background: url(../images/slides/plate.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family: sans-serif, arial;
+	font-size: 40;
+	display:flex;
+	flex-direction:row;
+}
+
+#section5 {
+	background: yellow;
+	background: url(../images/slides/join.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: #aeb9b9;
+}
+
+#section6 {
+	background: purple;
+	color: #aeb9b9;
+}
+
+#section7 {
+	background: #ebf5ee;
+	color: #aeb9b9;
+}
+
+#section8 {
+	background: blue;
+	color: #aeb9b9;
+}
+  
+img {max-width:100%;}
+
+.product {
+	position:relative;
+	top: 30vh;
+}
+.product h2 {position:absolute;
+	top:50%;
+	left:50%; 
+	transform: translateX(-50%) translateY(-50%);
+	margin: 0;
+	color: rgb(251, 255, 0);
+	text-align:center;
+	text-shadow: 2px 2px black;
+	strong {
+		display:block;
+	};
+}
+
+.product h2 .details{
+	color: white;
+	font-size: 15px;
+}
+
+.product img{
+	width: 30vw;
+	height: 30vw;
+	background-size:cover;
+	background-position:center;
+	border-radius:50%;
+	border: 10px solid black;;
+	padding: 10px;
+}
